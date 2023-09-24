@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Tommy_light";
+  src: url("../assets/fonts/RBOFOF-MADETOMMY-Light.ttf");
+}
+@font-face {
+  font-family: "Tommy";
+  src: url("../assets/fonts/GNDRQB-MADETOMMY.ttf");
+}
+@font-face {
+  font-family: "Tommy_bold";
+  src: url("../assets/fonts/SCJQCD-MADETOMMY-Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Tommy_light";
+  box-sizing: border-box;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container_fluid {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+/* Extra small screens (576px and below) */
+@media (min-width: 576px) {
+  .container_fluid {
+    max-width: 96%;
+  }
+}
+
+/* Small screens (768px and below) */
+@media (min-width: 768px) {
+  .container_fluid {
+    max-width: 94%;
+  }
+}
+
+/* Medium screens (992px and below) */
+@media (min-width: 992px) {
+  .container_fluid {
+    max-width: 94%;
+  }
+}
+
+/* Large screens (1200px and below) */
+@media (min-width: 1200px) {
+  .container_fluid {
+    max-width: 1140px;
+  }
+}
+
+/* Extra large screens (1400px and below) */
+@media (min-width: 1400px) {
+  .container_fluid {
+    max-width: 1300px;
+  }
+}
+
+/* ================== */
+
+.slick-prev:before {
+  content: "";
+  display: none;
+}
+.slick-next:before {
+  content: "";
+  display: none;
+}
+
+.hero_slide > .slick-active {
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+}
+.gallery_slide > .slick-active {
+  width: 20px;
+  height: 20px;
+  background: #666;
+  border-radius: 50%;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0 !important;
+}
+
+.slick-dots li button:before {
+  font-size: 18px !important;
+  color: #666 !important;
+  opacity: 1 !important ;
+  margin-top: 1px;
+}
+.slick-dots .hero_slide li button:before {
+  font-size: 18px !important;
+  color: white !important;
+  opacity: 1 !important ;
+  margin-top: 1px;
+}
