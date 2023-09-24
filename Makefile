@@ -1,6 +1,9 @@
-.PHONY: build deploy
+.PHONY: clean build deploy setup
 
-all: build deploy
+all: clean build deploy
+
+clean:
+	rm -rf docs/*
 
 build:
 	npm run build
